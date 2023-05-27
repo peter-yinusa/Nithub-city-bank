@@ -51,6 +51,18 @@ class Account {
   }
 }
 
+
+
+  // Method to generate URL parameters
+  generateURLParams() {
+    const params = new URLSearchParams();
+    params.set('account-name', this.accountName);
+    params.set('account-balance', this.accountBalance.toString());
+    params.set('account-number', this.accountNumber);
+    return params.toString();
+  }
+}
+
 // Retrieve user's inputted values from URL parameters
 const urlParams = new URLSearchParams(window.location.search);
 const accountName = urlParams.get('account-name') || '';
@@ -75,6 +87,14 @@ window.addEventListener('DOMContentLoaded', () => {
     localStorage.removeItem('updatedAccountNumber');
   }
 });
+
+
+
+
+
+
+
+
 
 // Handle deposit form submission
 const depositForm = document.getElementById('deposit-form') as HTMLFormElement;

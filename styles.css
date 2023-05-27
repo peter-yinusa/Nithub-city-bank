@@ -1,41 +1,77 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: blue;
-  color: white;
+  background-color: purple;
+  color: lightcoral;
+  font-family: 'Helvetica', Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
 }
 
 h1 {
-  font-size: 24px;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="password"] {
-  padding: 5px;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 form {
   margin-bottom: 20px;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+label {
+  display: block;
+  margin-bottom: 10px;
 }
+
+input[type="number"],
+input[type="text"],
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: lightcoral;
+  color: white;
+  cursor: pointer;
+}
+
+a button {
+  background-color: purple;
+  color: lightcoral;
+}
+
+a button:hover {
+  background-color: lightcoral;
+  color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

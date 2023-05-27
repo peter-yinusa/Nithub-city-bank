@@ -78,13 +78,13 @@ document.getElementById('account-name')!.textContent = userAccount.getAccountNam
 document.getElementById('account-balance')!.textContent = userAccount.getAccountBalance().toString();
 document.getElementById('account-number')!.textContent = userAccount.getAccountNumber();
 
-// Update the Account Number when returning from other pages
+// Update the Account Balance when returning from other pages
 window.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('updatedAccountNumber')) {
-    accountNumber = localStorage.getItem('updatedAccountNumber')!;
-    userAccount.accountNumber = accountNumber;
-    document.getElementById('account-number')!.textContent = accountNumber;
-    localStorage.removeItem('updatedAccountNumber');
+  if (localStorage.getItem('updatedAccountBalance')) {
+    accountBalance = parseFloat(localStorage.getItem('updatedAccountBalance')!);
+    userAccount.accountBalance = accountBalance;
+    document.getElementById('account-balance')!.textContent = accountBalance.toString();
+    localStorage.removeItem('updatedAccountBalance');
   }
 });
 
